@@ -1,0 +1,35 @@
+.title {
+	margin-bottom:42px;
+}
+
+.modal {
+	background:rgba(0,0,0,0.9);
+	display:block;
+	left:0;
+	min-height:100%;
+	position:absolute;
+	right:0;
+	top:0;
+	z-index:997;
+}
+
+.modal-inner {
+	max-width:612px;
+}
+
+.modal-toggle {
+	margin-bottom:28px;
+	text-align:center;
+}
+
+.modal-close i {
+	font-size:20px;
+	line-height:20px;
+}
+
+.icon {
+    width: 22px;
+    height: 22px;
+    margin: 5px;
+    color: #fff;
+}
