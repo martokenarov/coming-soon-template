@@ -1,0 +1,13 @@
+.main {
+    position:relative;
+    max-width:816px;
+    height: 100%;
+	padding-bottom:84px;
+	padding-top:84px;
+    margin:0 auto;
+    z-index:99;
+}
+
+.inner {
+	padding:42px 24px;
+}

@@ -6,8 +6,9 @@ import Background from './components/Background';
 function App() {
   return (
     <div className={styles.App}>
-      <Background />
-      <Main />
+      <Background >
+        <Main />
+      </Background>
     </div>
   );
 }

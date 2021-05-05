@@ -1,0 +1,140 @@
+.form {
+	display: flex;
+	flex-direction: column;
+}
+
+.inner-form {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin:0 auto;
+}
+
+.subtitle {
+	font-size:14px;
+	letter-spacing:1px;
+	margin:28px 0;
+	text-align:center;
+	text-transform:uppercase;
+    color: #dadada;
+    line-height: 1.75;
+}
+
+.email-form {
+	display: flex;
+	flex-direction: column;
+}
+
+.email-form input, button {
+	background:#6e6e6e;
+	background:rgba(169,169,169,0.3);
+	border:1px solid #6e6e6e;
+	color:#fff;
+	font-weight:700;
+	letter-spacing:1px;
+	padding:6px 12px;
+	text-transform:uppercase;
+	-webkit-border-radius:3px 0 0 3px;
+	-moz-border-radius:3px 0 0 3px;
+	border-radius:3px 0 0 3px;
+	width: 250px;
+}
+
+.email-form input:focus {
+	outline:0;
+}
+
+button, .email-form input[type="submit"] {
+	-webkit-transition:all 0.3s;
+	   -moz-transition:all 0.3s;
+			transition:all 0.3s;
+}
+
+button {
+	width: 180px;
+	font-size: 14px;
+	text-align: center;
+}
+
+button, .email-form input[type="submit"],
+button:hover, button:focus,
+.email-form input[type="submit"]:focus, .email-form input[type="submit"]:hover,
+.inner-form span.errors,
+.bounce1, .bounce2, .bounce3 {
+	background:#16b6ea;
+	border: 1px solid #16b6ea;
+	outline:0;
+}
+
+button, .email-form input[type="submit"],
+.inner-form span.error {
+	background:rgba(22, 182, 234, 0.8);
+}
+
+.form-field span.error {
+	border:1px solid #16b6ea;
+}
+
+.inner-form label {
+	font-size:14px;
+}
+
+.inner-form label, button {
+	height: 42px;
+}
+
+.email-form input {
+	height: 28px;
+}
+
+.email-form span.error {
+	/* position:absolute; */
+	top:45px;
+	color:#fff;
+	font-size:10px;
+	padding:2px 10px;
+	line-height: 1.75;
+	text-transform:uppercase;
+	-webkit-border-radius:3px;
+	   -moz-border-radius:3px;
+			border-radius:3px;
+}
+
+.form-wrap .success {
+	color:#dadada;
+	min-height:42px;
+	text-align:center;
+}
+
+@media only screen and (max-width: 480px) {
+	.inner-form {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	.inner-form {
+		display: flex;
+		align-self: center;
+		height: 42px;
+	}
+
+	.email-form {
+		height: 60px;
+	}
+
+	.inner-form button {
+		margin-top: 14px;
+		align-self: center;
+	}
+	/* #newsletter-form .form-field {
+		margin:0 0 14px;
+	}
+	
+	#newsletter-form .form-submit {
+		position:static;
+		margin:0 auto;		
+		right:auto;
+		top:auto;
+	} */
+}

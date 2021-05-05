@@ -1,0 +1,30 @@
+.title {
+    text-transform: uppercase;
+    text-align: center;
+    font-weight:400;
+    color: #fff;
+}
+
+.title > span {
+	font-weight:700;
+}
+
+.slogan {
+    font-size: 14px;
+    text-align: center;
+    margin: 0 0 28px;
+    color: #dadada;
+    line-height: 1.75;
+}
+
+@media only screen and (max-width:680px) {
+	.title {
+		font-size:36px;
+	}
+}
+
+@media only screen and (max-width:480px) {
+	.title {
+		font-size:30px;
+	}
+}
