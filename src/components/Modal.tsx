@@ -18,7 +18,7 @@ const Modal: React.FC<ModalProps> = (props) => {
                     <FontAwesomeIcon className={styles['icon']} icon={faTimes} size="lg" />
                 </div> 
                 <section className="content">
-                <h1 className="title">About <span>Selene</span></h1>
+                <h1 className="title">About <span>The Site</span></h1>
                 <div className="row">
                     <div className="one-half">
                         <p>Sed congue blandit augue, at malesuada nisl pulvinar et. Fusce varius magna eget magna maximus venenatis.</p>
