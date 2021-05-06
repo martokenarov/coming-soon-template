@@ -1,5 +1,17 @@
 .title {
 	margin-bottom:42px;
+	font-size: 42px;
+	text-transform: uppercase;
+	color: #fff;
+	font-weight: 400;
+	text-align: center;
+	line-height: 1.16667;
+	margin: 0 0 28px;
+}
+
+.title > span {
+	color: #16b6ea;
+	font-weight: 700;
 }
 
 .modal {
@@ -15,6 +27,9 @@
 
 .modal-inner {
 	max-width:612px;
+	margin: 0 auto;
+	padding: 42px 24px;
+	color: #fff;
 }
 
 .modal-toggle {
@@ -31,5 +46,67 @@
     width: 22px;
     height: 22px;
     margin: 5px;
-    color: #fff;
+    color: #16b6ea;
+}
+
+.one-half {
+	width:50%;
+}
+
+.one-half {
+	float:left;
+	padding-left:48px;
+	-webkit-box-sizing:border-box;
+	   -moz-box-sizing:border-box;
+			box-sizing:border-box;
+}
+
+.one-half > h2 {
+	font-size:24px;
+	margin-bottom:14px;
+	text-align:left;
+	color:#fff;
+	font-weight:400;
+	line-height:1.16667;
+	margin:0 0 28px;
+}
+
+.one-half > p {
+	line-height: 1.75;
+	margin:0 0 28px;
+}
+
+.one-half > p > a {
+	color: #16b6ea;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+@media only screen and (max-width: 680px) {
+	.title {
+		font-size: 36px;
+	}
+}
+
+@media only screen and (max-width: 540px) {
+	.one-half {
+		width: 100%;
+	}
+}
+
+@media only screen and (max-width: 480px) {
+	.title {
+		font-size: 30px;
+	}
+	.one-half {
+		padding-left:0;
+	}
+}
+.row {
+	margin-left: -48px;
+}
+
+.row::before, .row::after {
+	content: "";
+	display: table;
 }

@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React, {useState, useCallback} from 'react';
 import Header from './Header';
 import Section from './Section';
 import ModalButton from './ModalButton';
@@ -9,22 +9,27 @@ interface MainProps {}
 
 const Main: React.FC<MainProps> = (props) => {
     const [isOpen, setIsOpen] = useState(false);
+
+    const onClickButton = () => {
+        // console.log('Show info');
+        setIsOpen(true);
+    };
+
+    const modalCallback = () => {
+        // console.log('Close modal');
+        setIsOpen(false);
+    };
+
     return (
         <>
             <div className={styles.main}>
                 <div className={styles.inner}>
                     <Header />
                     <Section />
-                    <ModalButton onClick={() => {
-                        console.log('Show info');
-                        setIsOpen(true);
-                    }}/>
+                    <ModalButton onClick={onClickButton}/>
                 </div>
             </div>
-            <Modal isOpen={isOpen} callback={() => {
-                console.log('Close modal');
-                setIsOpen(false);
-            }}/>
+            <Modal isOpen={isOpen} callback={modalCallback}/>
         </>
     );
 }
