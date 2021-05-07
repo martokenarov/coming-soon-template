@@ -1,6 +1,7 @@
 import React from 'react';
 import styles from './Section.module.css';
 import NewsLetterForm from './NewsLetterForm';
+import Social from './Social';
 
 const Section = () => {
     return (
@@ -14,6 +15,7 @@ const Section = () => {
                 You will love ArtLola as much as we do. It will morph perfectly on your needs!
             </p>
             <NewsLetterForm />
+            <Social />
         </>
     )
 }
