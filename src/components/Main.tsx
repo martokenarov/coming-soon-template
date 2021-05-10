@@ -1,4 +1,4 @@
-import React, {useState, useCallback} from 'react';
+import React, {useState, useEffect} from 'react';
 import Header from './Header';
 import Section from './Section';
 import ModalButton from './ModalButton';
@@ -9,6 +9,13 @@ interface MainProps {}
 
 const Main: React.FC<MainProps> = (props) => {
     const [isOpen, setIsOpen] = useState(false);
+
+    useEffect(() =>{
+        // scroll to top if Modal is open in mobile browser 
+        if (isOpen && window.outerWidth <= 480) {
+            window.scrollTo(0, 0);
+        }
+    }, [isOpen]);
 
     const onClickButton = () => {
         // console.log('Show info');
