@@ -11,3 +11,9 @@
 .inner {
 	padding:42px 24px;
 }
+
+@media only screen and (max-width: 480px) {
+    .main {
+        padding-top: 0;
+    }
+}
