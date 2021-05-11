@@ -1,6 +1,11 @@
 import React from 'react';
 import {useFormik} from 'formik';
+import * as Yup from 'yup';
 import styles from './NewsLetter.module.css';
+
+const EmailSchema = Yup.object().shape({
+    email: Yup.string().email('Invalid email').required('Required')
+});
 
 type NewsLetterFormProps = {}
 
@@ -10,6 +15,7 @@ const NewsLetterForm:React.FC<NewsLetterFormProps> = () => {
         initialValues: {
             email: '',
         },
+        validationSchema: {EmailSchema},
         onSubmit: (values) => {
             alert(JSON.stringify(values, null, 2));
         }
