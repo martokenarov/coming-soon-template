@@ -9,7 +9,7 @@ const Background: React.FC<BackgroundProps> = ({children}) => {
             <div className={styles.Img} style={{backgroundImage: `url(${process.env.PUBLIC_URL}${'/images/bg_desktop.jpg'})`}}>
                 {children}
             </div>
-            <div className={styles.overlay} style={{background: 'rgba(0,0,0,0.5)', backgroundImage:`url(${process.env.PUBLIC_URL}${'/images/overlay.png'}) repeat`}}></div>
+            <div className={styles.overlay} style={{background: 'rgba(0,0,0,0.2)', backgroundImage:`url(${process.env.PUBLIC_URL}${'/images/overlay.png'}) repeat`}}></div>
         </>
     );
 }

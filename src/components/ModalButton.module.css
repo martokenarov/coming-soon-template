@@ -12,9 +12,6 @@
 	-webkit-border-radius:999px;
 	-moz-border-radius:999px;
 	border-radius:999px;
-	-webkit-transition:all 0.3s;
-	-moz-transition:all 0.3s;
-	transition:all 0.3s;
 	-webkit-transform:translateY(-50%);
 	-moz-transform:translateY(-50%);
 	-ms-transform:translateY(-50%);
